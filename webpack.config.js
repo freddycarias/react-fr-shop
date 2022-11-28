@@ -44,14 +44,6 @@ module.exports = {
         })
     ],
     devServer: {
-        static: {
-        directory: path.join(__dirname, 'dist'),
-    },
-    
-    port:8080,
-    
-    },
-    devServer: {
         historyApiFallback: true,
     },
     

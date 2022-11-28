@@ -12,9 +12,9 @@ const App = () => {
         <BrowserRouter>      
             <Layout>
                 <Routes>
-                    <Route exactpath='/'element={<Home/>} />
-                    <Route exactpath='/login'element={<Login/>} />
-                    <Route exactpath='/recoveryPassword'element={<RecoveryPassword/>} />
+                    <Route exact path='/'element={<Home/>} />
+                    <Route exact path='/login'element={<Login/>} />
+                    <Route exact path='/recovery-password'element={<RecoveryPassword/>} />
                     <Route path='*'element={<NotFound />} />
                 </Routes>
             </Layout>
