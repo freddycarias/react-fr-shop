@@ -1,6 +1,7 @@
 import React from "react";
+import "../styles/login.scss";
 
-const login  = () => {
+const Login  = () => {
     return (
         <div className="login">
         <div className="form-container">
@@ -12,7 +13,6 @@ const login  = () => {
                 <input type="password" placeholder="********" className="input input-password" id="password" />
                 <label for="check-password" className="label">Re-Enter Password</label>
                 <input type="password" placeholder="********" className="input input-password" id="check-password" />
-
                 <input type="submit" value="confirm" className="primary-button login-button"/>
             </form>
         </div>
@@ -20,4 +20,4 @@ const login  = () => {
     );
 }
 
-export default login;
+export default Login;
