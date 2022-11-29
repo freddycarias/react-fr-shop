@@ -6,6 +6,7 @@ import  Login  from'../containers/login';
 import  RecoveryPassword  from'../containers/RecoveryPassword';
 import  NotFound  from'../pages/NotFound';
 import'../styles/golbal.css';
+import Header from "../components/Header"
 
 const App = () => {
     return (
