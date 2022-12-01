@@ -2,18 +2,16 @@ import { useState } from 'react';
 import React from 'react';
 import '@styles/Header.scss';
 import Menu from "@components/Menu";
-
+//importacion de las imgenes para la pagina
 import iconMenu from "@icons/icon_menu.svg";
 import logoYardSale from "@logos/logo_yard_sale.svg";
 import iconShoppingCart from "@icons/icon_shopping_cart.svg";
 
 const Header = () => {
-	
 	const [toggle, setToggle] = useState(false);
 	const handleToggle = () => {
 		setToggle(!toggle);
 	}
-	
 	return (
 		<nav>
 			<img src= {iconMenu} alt="menu" className="menu" />
