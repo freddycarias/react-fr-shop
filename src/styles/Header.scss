@@ -50,7 +50,9 @@ nav {
     color: var(--hospital-green);
 }
 .navbar-shopping-cart {
-	position: relative;
+	// position: relative;
+	position: fixed;
+	right: 10px;
 }
 .navbar-shopping-cart div {
 	width: 16px;
