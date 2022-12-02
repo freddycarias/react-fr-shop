@@ -22,12 +22,9 @@ const ProductItem = ({ product }) => {
 				<button onClick={() => handleClick(product)}>
 					<img src= {iconAddCart} alt="" />
 				</button>
-				{cart}
 			</div>
 		</div>
 	);
 }
 
 export default ProductItem;
-
-
