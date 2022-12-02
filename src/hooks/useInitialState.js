@@ -17,9 +17,20 @@ const useInitialState = () => {
         });
     };
 
+    const removeFromCart = (keyIndex) => {
+        const newCart = state.cart;
+        newCart.splice(keyIndex,1);
+
+        setState({
+            ...state,
+            cart: newCart
+        })
+    } 
+
     return {
         state,
-        addToCart
+        addToCart,
+        removeFromCart
     }
 };
 

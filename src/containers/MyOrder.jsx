@@ -1,7 +1,7 @@
 import React,{useContext} from 'react';
 import OrderItem from '@components/OrderItem';
 import '@styles/MyOrder.scss';
-import appContext from "@context/appContext"
+import appContext from "@context/appContext";
 
 import iconFlecha from "@icons/flechita.svg";
 
@@ -20,9 +20,9 @@ const MyOrder = () => {
 				<p className="title">My order</p>
 			</div>
 			<div className="my-order-content">
-				{cart.map(product => (
-					<OrderItem key={`orderItem-${product.id}`} product={product} />
-				))}
+			{cart.map( (product, index) => (
+            <OrderItem product={product} key={`order-item-${index}`} keyIndex={index} />
+			))}
 				<div className="order">
 					<p>
 						<span>Total</span>
