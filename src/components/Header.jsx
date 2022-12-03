@@ -7,7 +7,7 @@ import AppContext from "@context/appContext"
 import iconMenu from "@icons/icon_menu.svg";
 import logoYardSale from "@logos/logo_yard_sale.svg";
 import iconShoppingCart from "@icons/icon_shopping_cart.svg";
-import MyOrder from "../containers/MyOrder"
+import MyOrder from "@containers/MyOrder"
 
 const Header = () => {
 	const [toggle, setToggle] = useState(false);
